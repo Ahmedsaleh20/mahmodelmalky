@@ -27,7 +27,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  google_fonts: ^2.3.1
+  google_fonts: 
   flutter:
     sdk: flutter
 
@@ -63,10 +63,10 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-   - lib/images/G.png
-   - lib/images/LOGO.png
-   - lib/images/oldgolio.png
-   - lib/images/Splash Photo.png
+   - lib/assets/images/G.png
+   - lib/assets/images/LOGO.png
+   - lib/assets/images/oldgolio.png
+   - lib/assets/images/Splash Photo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

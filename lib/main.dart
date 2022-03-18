@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mahmodelmalky/const/custom_text_field.dart';
-import 'package:mahmodelmalky/pages/sign_in.dart';
 import 'package:mahmodelmalky/pages/splash.dart';
 
 void main() {
@@ -19,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Splash(),
+      home: const Splash(),
     );
   }
 }

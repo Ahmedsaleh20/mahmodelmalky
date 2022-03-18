@@ -1,10 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mahmodelmalky/const/color.dart';
-import 'package:mahmodelmalky/const/custem_logo.dart';
-import 'package:mahmodelmalky/const/custom_text_field.dart';
-import 'package:mahmodelmalky/const/custombutton.dart';
+import 'package:mahmodelmalky/widgets/custem_logo.dart';
+import 'package:mahmodelmalky/widgets/custom_text_field.dart';
+import 'package:mahmodelmalky/widgets/custombutton.dart';
 
 class SignIn extends StatelessWidget {
   const SignIn({Key? key}) : super(key: key);
@@ -17,11 +16,11 @@ class SignIn extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
-              CustemLogo(),
-              SizedBox(
+              const CustomLogo(),
+              const SizedBox(
                 height: 30,
               ),
               Text(
@@ -33,7 +32,7 @@ class SignIn extends StatelessWidget {
                       fontWeight: FontWeight.w400),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Text(
@@ -45,36 +44,36 @@ class SignIn extends StatelessWidget {
                       fontWeight: FontWeight.normal),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
-              CustemTextFormField(
+              CustomTextFormField(
                 hint: 'Email or mobile number',
                 prefix: false,
                 suffix: false,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              CustemTextFormField(
+              CustomTextFormField(
                 hint: 'password',
                 prefix: false,
                 suffix: true,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
                 children: [
                   Checkbox(
                     onChanged: (bool? value) {},
-                    activeColor: Color(0xFF6200EE),
+                    activeColor: const Color(0xFF6200EE),
                     value: false,
                   ),
-                  Text(
+                  const Text(
                     'Remember Me',
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     'Forget Password?',
                     style: GoogleFonts.montserrat(
@@ -84,27 +83,27 @@ class SignIn extends StatelessWidget {
                           fontWeight: FontWeight.normal),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  CustemButton(
+                  CustomButton(
                     text: 'Sign IN',
                     color: secondColor,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 40,
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 60,
               ),
               Row(
@@ -119,7 +118,7 @@ class SignIn extends StatelessWidget {
                           fontWeight: FontWeight.normal),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
                   Text(

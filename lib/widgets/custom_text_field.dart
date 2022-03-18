@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:mahmodelmalky/const/color.dart';
 
-class CustemTextFormField extends StatelessWidget {
+// ignore: must_be_immutable
+class CustomTextFormField extends StatelessWidget {
   String? hint;
   bool? prefix;
   bool? suffix;
-  CustemTextFormField({this.hint, this.prefix, this.suffix});
+  CustomTextFormField({Key? key, this.hint, this.prefix, this.suffix})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +16,8 @@ class CustemTextFormField extends StatelessWidget {
       child: TextFormField(
         decoration: InputDecoration(
           hintText: hint,
-          contentPadding: EdgeInsets.fromLTRB(10, 10, 10, 0),
-          hintStyle: TextStyle(
+          contentPadding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+          hintStyle: const TextStyle(
               color: Colors.black26, fontSize: 16, fontStyle: FontStyle.italic),
           fillColor: Colors.white,
           enabledBorder: OutlineInputBorder(

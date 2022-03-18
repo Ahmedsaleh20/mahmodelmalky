@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mahmodelmalky/const/color.dart';
 
-class CustemButton extends StatelessWidget {
-  String? text;
+// ignore: must_be_immutable
+class CustomButton extends StatelessWidget {
+  final String? text;
   Color? color;
-  CustemButton({this.text, this.color});
+  CustomButton({Key? key, this.text, this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

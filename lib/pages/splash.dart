@@ -6,10 +6,11 @@ class Splash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
           child: Image.asset(
-            'lib/images/Splash Photo.png',
+            'lib/assets/images/Splash Photo.png',
             fit: BoxFit.fill,
           ),
         ),
